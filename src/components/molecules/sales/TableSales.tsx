@@ -13,7 +13,15 @@ import {
   Title,
   Icon,
   Flex,
+  Divider,
+  Metric,
+  Text,
 } from "@tremor/react";
+import Header from "../../organisms/Header";
+import NavBar from "../NavBar";
+import { Content } from "../../../pages/StylePages/HomeUser";
+import CommissionsViews from "../../organisms/userCommission/Commissions";
+import FormCadProduct from "../../organisms/FormCadProduct";
 
 type Product = {
   id: string;
@@ -73,7 +81,7 @@ const TableSales = () => {
   }, []);
 
   return (
-    <Card>
+    <>
       <Flex>
         <Title> Relatório de Vendas </Title>
         <Icon
@@ -105,7 +113,7 @@ const TableSales = () => {
           ))}
         </TableBody>
       </Table>
-    </Card>
+    </>
   );
 };
 
